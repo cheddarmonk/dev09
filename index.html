@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>dev-09</title>
+
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+    <h1>Elderflower</h1>
+    <div id="content">
+        <div id="greeting" class="message">Welcome to Elderflower Tile Creator</div>
+        <table>
+            <tr>
+                <td>Custom Sign Input: </td>
+                <td id="userSign">
+                    <input id="userSignInput" type="text"></td>
+            </tr>
+            <tr>
+                <td>Upgrade Font?</td>
+                <td><input id=userFontInput type="checkbox">Upgrade Font? ($1/tile)</input></td>
+            </tr>
+            <tr>
+                <td>Upgrade Color?</td>
+                <td><input id=userColorInput type="checkbox">Upgrade Color? ($5)</input></td>
+            </tr>
+            <tr>
+                <td>Total tiles: </td>
+                <td id="tiles"></td>
+            </tr>
+            <tr>
+                <td>Subtotal: </td>
+                <td id="subTotal">$</td>
+            </tr>
+            <tr>
+                <td>Shipping: </td>
+                <td id="shipping">$</td>
+            </tr>
+            <tr>
+                <td>Grand total: </td>
+                <td id="grandTotal">$</td>
+            </tr>
+        </table>
+        <a href="#" id="confirmOrder" class="action">Confirm & Pay Now</a>
+    </div>
+
+    <div id="priceCheck">
+        <div>
+            <button id="priceYes" type="button">Submit Payment</button>
+            <button id="priceNo" type="button">Go Back To Design</button>
+            
+            <div id="tilePreview"></div>
+        </div>
+        
+    </div>
+    
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+
+
+
+</body>
+
+</html>
